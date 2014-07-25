@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	src:url(font/font.woff);
+	font-family:'font';
+	
+	
+}
+
+body {
+	font-family:'font';
+	width:100%;
+	list-style:decimal;
+	align-content:center
+	
+
+	
+}
+
+
+
+
+section {
+	padding: 20px;
+	width:100%;
+	background-color: white;
+	color:#1f8ee2;
+	
+	
+}
+
+section:nth-child(odd) {
+	background-color: #FAFAFA;	
+	width:100%;
+	
+}
+
+
+
+
+
+
+.domanda {
+	width: 100%;
+	font-size: 30px;
+	margin-bottom: 50px;
+	font-style: strong;
+	color: #5282D1
+}
+
+
+
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+	width: 50px;
+	height: 50px;
+	top: 1px;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	cursor: pointer;
+}
+
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 50;
+}
+
+
+.ac-custom label::before {
+	content: '';
+	border: 4px solid #fff;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+
+
+
+.ac-radio label::before {
+	border-radius: 50%;
+}
+
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+	opacity: 0.8;
+}
+
+input[type='radio'] {
+cursor: pointer;
+
+}
+
+.ac-custom svg {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+.ac-custom svg path {
+	stroke: blue;
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+	font-size: 24px;
+	padding: 0 0 0 80px;
+	vertical-align: top;
+	color: #4C4C4C;
+	cursor: pointer;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.ac-custom ol li {
+
+	list-style-type: decimal;
+
+
+}
+
+.ac-custom ul li {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	list-style-type: none;
+}
+
+
+.ac-custom svg {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+
+.ac-custom svg path {
+	stroke: #1544E3;
+	stroke-width: 5px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+
+
+
+.ac-custom input[type="radio"]:checked + label {
+	color: #fff;
+} 
+
+.ac-custom input[type="radio"]:checked + label {
+	color: #25408F;
+	font-size: large;
+} 
+
+
+
+
+
+
+/* Specific input, SVG and path styles */
+
+/* Circle */
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+	width: 30px;
+	height: 30px;
+	margin-top: 0px;
+	left: 10px;
+	right: 0px;
+	position: absolute;
+	background-color: orange;
+	border: none;
+	
+}
+
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+	width: 12px;
+	height: 12px;
+	margin-top: 4px;
+	left: 10px;
+	right: 0px;
+	position: absolute;
+	background-color: #8CC832;
+	border: none;
+}
+
+
+
+
+.ac-circle svg {
+	width: 49px;
+	height: 50px;
+	margin-top: -35px;
+	left: -9px;
+}
+
+
+
+
+
+
+	.punteggio {
+		border:2px solid red;
+		float: right;
+		z-index:50;
+		width:500px;
+		margin:auto;
+		position:relative;
+		top:250px; left:0; right:0; bottom:0;
+		border:10px solid grey;
+		padding: 30px;
+		border-radius: 30px;
+
+
+}
+
+.punteggio p {
+
+	font-size: 30px;
+	font-family: "Helvetica", sans-serif;
+	text-align: center;
+
+}
+
+.numero {
+	font-size: 50px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+
+
+}
+
+
+
+.giusto {
+	border: 5px solid #12B25C;
+	background-color: #A2FF4D;
+	font-size:17px;
+	color:green;
+	word-spacing: 3px;
+	border-radius: 20px;
+	padding:20px;
+
+
+}
+
+.sbaglio {
+	border: 5px solid #FF5D4D;
+	background-color: #FFA9A8;
+	font-size:17px;
+	color:#232323;
+	word-spacing: 5px;
+	border-radius: 20px;
+	padding:20px;
+
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: green;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	text-transform: uppercase;
+
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+.btn-2 {
+	background-color: #008EDE;
+	color: #fff;
+	box-shadow: 0 6px #046EA5;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	margin-top: 30px;
+	-webkit-box-shadow: 0 6px #046EA5;
+}
+
+/* Button 2a */
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 4px #08B2EF;
+	top: 2px;
+	-webkit-box-shadow: 0 4px #08B2EF;
+}
+
+.btn-2a:active {
+	box-shadow: 0 0 #0DA0E7;
+	top: 6px;
+	-webkit-box-shadow: 0 0 #0DA0E7;
+}
